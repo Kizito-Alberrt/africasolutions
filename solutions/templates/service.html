@@ -1,0 +1,590 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Africa solutions</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{% static 'solutions/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'solutions/css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="text-primary"><i class=" fas fa-solid fa-globe"></i>Africa Solutions</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Service</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                       
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                
+                    
+                </div>
+            </nav>
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        
+                        <li class="breadcrumb-item active text-primary">Service</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Service Start -->
+        <div class="container-fluid service bg-light overflow-hidden py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Our Service</h4>
+                    <h1 class="display-3 text-capitalize mb-3">We take pride in our achievements</h1>
+                </div>
+                <div class="container-fluid about py-5">
+                    <div class="container py-5">
+                        <div class="row g-5">
+                            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                                <div class="about-img rounded h-100">
+                                    <img src="{% static 'solutions/img/group.jpg' %}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="">
+                                    <!-- <div class="about-exp"><span>20 Years Experiance</span></div> -->
+                                </div>
+                            </div>
+                            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                                <div class="about-item">
+                                    <h4 class="text-primary text-uppercase"></h4>
+                                    <h1 class="display-3 mb-3">Monitoring & Evaluation.</h1>
+                                    <p class="mb-4">This section delves into the systematic process of monitoring and evaluation, exploring how data collection, analysis, and reporting mechanisms are essential for ensuring the effectiveness, efficiency, and sustainability of projects and programs. It emphasizes the importance of ongoing assessments in improving outcomes and informing future decision-making.
+                                        Monitoring and evaluation (M&E) are critical components for the success of any project or initiative. Monitoring involves the continuous assessment of project activities, ensuring they are aligned with the intended objectives, schedules, and budgets. Evaluation, on the other hand, measures the impact and effectiveness of the project after a certain period or upon completion. Through M&E, organizations can make informed decisions, improve accountability, and learn valuable lessons for future projects. Effective M&E requires clear indicators, reliable data collection methods, and regular reporting to track progress and assess the outcomes. Without robust M&E systems, projects may suffer from inefficiencies, missed objectives, and lack of transparency.
+
+
+                                    </p>
+                                    <div class="bg-light rounded p-4 mb-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="about-item">
+                    <h4 class="text-primary text-uppercase"></h4>
+                    <h1 class="display-3 mb-3">Financial management & Accountability</h1>
+                    <p class="mb-4">This section focuses on the principles and practices of sound financial management, emphasizing transparency, budget control, and the critical role of accountability in maintaining financial integrity. It highlights methods for ensuring that funds are properly allocated, tracked, and reported in alignment with organizational goals and ethical standards.
+                        Financial management and accountability are foundational to the sustainability and success of any organization or project. Proper financial management involves budgeting, allocating resources efficiently, tracking expenses, and ensuring that all financial activities are compliant with legal regulations and best practices. Accountability, on the other hand, requires transparency in financial reporting and ensures that funds are used for their intended purposes. This practice instills trust among stakeholders, donors, and beneficiaries. Regular financial audits, internal controls, and clear reporting frameworks ensure that there is minimal room for mismanagement and corruption. Prioritizing financial management and accountability fosters ethical practices and supports long-term organizational growth.
+
+                    </p>
+                    <div class="bg-light rounded p-4 mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid about py-5">
+                    <div class="container py-5">
+                        <div class="row g-5">
+                            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                                <div class="about-img rounded h-100">
+                                    <img src="{% static 'solutions/img/capacity.jpg' %}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="">
+                                    <!-- <div class="about-exp"><span>20 Years Experiance</span></div> -->
+                                </div>
+                            </div>
+                            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                                <div class="about-item">
+                                    <h4 class="text-primary text-uppercase"></h4>
+                                    <h1 class="display-3 mb-3">Capacity building.</h1>
+                                    <p class="mb-4">This section explores the strategies for enhancing the skills, knowledge, and abilities of individuals and organizations. Capacity building is presented as a key tool for empowering stakeholders, fostering sustainable development, and strengthening the performance and resilience of institutions.
+                                        Capacity building is the process of developing and strengthening the skills, abilities, and resources of individuals, organizations, or communities to achieve sustainable growth and effectiveness. It encompasses training programs, mentorship, workshops, and the provision of tools and resources to enhance performance. Effective capacity building leads to increased efficiency, innovation, and resilience within organizations or communities. It also empowers people to take ownership of their development goals, creating a sense of agency and fostering long-term impact. Whether in the context of education, healthcare, or governance, capacity building is essential for fostering self-reliance and enhancing the capabilities of all stakeholders involved.
+                                    </p>
+                                    <div class="bg-light rounded p-4 mb-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <h4 class="text-primary text-uppercase"></h4>
+                    <h1 class="display-3 mb-3">Educate.</h1>
+                    <p class="mb-4">This section examines the pivotal role of education in shaping societies and fostering development. It covers the importance of access to quality education, curriculum development, teaching methodologies, and the ways in which education contributes to personal, community, and national growth.
+                        Education is the cornerstone of individual and societal growth. It not only provides knowledge and skills but also fosters critical thinking, creativity, and social awareness. A well-educated population contributes to economic development, social cohesion, and political stability. Education systems should be inclusive, equitable, and accessible to all, promoting lifelong learning opportunities. Investments in education, from early childhood to higher learning, yield significant returns in the form of improved public health, reduced poverty, and a more engaged and informed citizenry. In the digital age, education is also evolving, integrating technology and innovative approaches to meet the changing needs of society.
+                    </p>
+                    <div class="bg-light rounded p-4 mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid about py-5">
+                    <div class="container py-5">
+                        <div class="row g-5">
+                            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                                <div class="about-img rounded h-100">
+                                    <img src="{% static 'solutions/img/civic1.jpg' %}" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="">
+                                    <!-- <div class="about-exp"><span>20 Years Experiance</span></div> -->
+                                </div>
+                            </div>
+                            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                                <div class="about-item">
+                                    <h4 class="text-primary text-uppercase"></h4>
+                                    <h1 class="display-3 mb-3">Civic Education.</h1>
+                                    <p class="mb-4">Africa Solutions has had 
+                                        A highly practical change management training course focuses on developing the critical skills to effectively manage change in the work place and covers how to motivate people through the change process.
+                                        The course aims at providing leaders and managers with clear insights on how to effectively motivate people through corporate culture or organizational change. It will also equip them with some effective skills and knowledge for managing and communicating change.
+                                        
+                                    </p>
+                                    <div class="bg-light rounded p-4 mb-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                             <div class="about-item">
+                                    <h4 class="text-primary text-uppercase"></h4>
+                                    <h1 class="display-3 mb-3">Environmental audit program.</h1>
+                                    <p class="mb-4">In response to growing environmental challenges, Africa Solution has been at the forefront of environmental conservation through its comprehensive Environmental Audit Program. This program focuses on assessing the environmental impact of various projects, ensuring that they comply with regulatory standards and operate in a sustainable manner.
+
+                                        Our audits cover a wide range of sectors, including agriculture, manufacturing, and urban development. We provide detailed assessments that identify potential environmental risks and offer recommendations for mitigation. These audits help organizations and government bodies align with Kenya’s environmental policies and international best practices, fostering a culture of sustainability.
+                                        
+                                        Through this program, we aim to protect natural ecosystems, reduce pollution, and ensure that development projects do not compromise the health of our environment. Our efforts have helped numerous entities reduce their ecological footprint while promoting practices that conserve resources for future generations.
+                                    </p>
+                                    <div class="bg-light rounded p-4 mb-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- Service End -->
+
+        <!-- Fact Counter -->
+        <!-- <div class="container-fluid counter py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-thumbs-up fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Happy Clients</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">456</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-truck fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Transport</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">513</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-users fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Employees</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">53</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="counter-item">
+                            <div class="counter-item-icon mx-auto">
+                                <i class="fas fa-heart fa-3x text-white"></i>
+                            </div>
+                            <h4 class="text-white my-4">Years Experiance</h4>
+                            <div class="counter-counting">
+                                <span class="text-white fs-2 fw-bold" data-toggle="counter-up">17</span>
+                                <span class="h1 fw-bold text-white">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Fact Counter -->
+
+        <!-- Testimonial Start -->
+        <!-- <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Testimonials</h4>
+                    <h1 class="display-3 text-capitalize mb-3">Our clients reviews.</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="testimonial-item text-center p-4">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
+                        </p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/testimonial-1.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
+                        </div>
+                        <div class="d-block">
+                            <h4 class="text-dark">Client Name</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex justify-content-center text-secondary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center p-4">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
+                        </p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/testimonial-2.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
+                        </div>
+                        <div class="d-block">
+                            <h4 class="text-dark">Client Name</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex justify-content-center text-secondary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center p-4">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
+                        </p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/testimonial-3.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
+                        </div>
+                        <div class="d-block">
+                            <h4 class="text-dark">Client Name</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex justify-content-center text-secondary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item text-center p-4">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
+                        </p>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/testimonial-3.jpg" class="img-fluid border border-4 border-primary" style="width: 100px; height: 100px; border-radius: 50px;" alt="">
+                        </div>
+                        <div class="d-block">
+                            <h4 class="text-dark">Client Name</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex justify-content-center text-secondary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
+
+
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">More about what we do</h4>
+                    <h1 class="display-3 text-capitalize mb-3"></h1>
+                </div>
+                
+                <div class="container-fluid about py-5">
+                    
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'solutions/img/blog-1.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Devolution</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">Capacity building  </a>
+                                <p>	Over the years, Africa Solution has played an active role in strengthening the capacity of county governments across Kenya. Our capacity-building initiatives are designed to equip county officials and staff with the skills, knowledge, and tools necessary to manage resources, plan strategically, and implement policies effectively for the benefit of local communities.
+
+                                    We focus on various aspects of governance, including financial management, public service delivery, policy formulation, and citizen engagement. Our training programs bring together county leaders, administrators, and technical staff, providing them with practical skills and strategies that enhance governance and service delivery.
+                                    
+                                    The impact of our work is visible in improved infrastructure, better healthcare services, enhanced public participation in governance, and more transparent management of county resources. By empowering local governments to perform efficiently, we are contributing to the development of Kenya’s counties and creating lasting change at the grassroots level.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'solutions/img/blog-2.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Environment </div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">Tree planting </a>
+                                <p>	Tree planting has been one of the most impactful environmental initiatives undertaken by Africa Solution. In collaboration with schools across Kenya, we have implemented a tree-planting program designed to instill environmental consciousness in young minds while contributing to reforestation efforts.
+
+                                    This program not only helps combat deforestation but also educates students about the importance of trees in sustaining life on Earth. Each school participates by setting up tree nurseries, where students take responsibility for nurturing the trees from seedlings to maturity. This hands-on approach fosters a sense of environmental stewardship among students and their communities.
+                                    
+                                    The benefits of this program extend beyond reforestation. The trees planted contribute to improving air quality, reducing soil erosion, and providing shade and beauty to school grounds. Over the years, we have planted thousands of trees, helping to restore Kenya’s green cover and mitigate the effects of climate change.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'solutions/img/blog-3.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
+                            </div>
+                            <div class="blog-content rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-3">Funyula HIV & AIDS awareness</a>
+                                <p>	In Funyula, Kenya, the HIV/AIDS epidemic has deeply affected many lives, and combating the stigma and misinformation surrounding the disease is crucial to halting its spread. Africa Solution has been actively involved in raising awareness and providing education about HIV & AIDS, with a focus on prevention, testing, and treatment.
+
+                                    Our Funyula HIV & AIDS Awareness Program conducts community outreach, targeting vulnerable populations and working closely with local healthcare providers. We organize workshops, support groups, and public health campaigns to educate people about the importance of regular testing, safe practices, and treatment options available to those living with HIV/AIDS.
+                                    
+                                    One of the central aspects of our work is addressing the stigma associated with the disease. By facilitating open dialogues and providing accurate information, we aim to change attitudes and promote acceptance within the community. We believe that through education and empathy, we can not only reduce the spread of HIV but also create a more supportive environment for those affected by the virus.
+                                    
+                                    Our work in Funyula has had a profound impact, increasing awareness and helping to connect individuals with the healthcare resources they need. Through this program, we are building a healthier, more informed community that is empowered to tackle the challenges posed by HIV/AIDS.
+</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5 mb-5 align-items-center">
+                    <div class="col-lg-7">
+                        <!-- <div class="position-relative mx-auto">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
+                            <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h1 class="text-primary"></i>Africa Solutions</h1>
+                                <p class="mb-3">We strive in bringing solutions for a brighter Africa, creating a sustainable change, lasting impact and building stronger future together</p>
+                            </div>
+                            <!-- <div class="position-relative">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">About Us</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Free Water Bottles</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Water Dispensers</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Bottled Water Coolers</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                        </div>
+                    </div> -->
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Business Hours</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Sunday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Freedom from hunger house</a>
+                            <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> Nairobi, Westlands</a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> P.O Box 21800-00400</a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> africa.solutions@yahoo.com</a>
+                            
+                            <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +254 722 455 592</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Africa Solutions</a>, All right reserved.</span>
+                    </div>
+                    <!-- <div class="col-md-6 text-center text-md-end text-body"> -->
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        <!-- Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'solutions/lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'solutions/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'solutions/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'solutions/lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'solutions/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="{% static 'solutions/js/main.js' %}"></script>
+    </body>
+
+</html>
